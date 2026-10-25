@@ -1,3 +1,313 @@
 @use "./variables.scss" as *;
 
-// put your custom CSS here!
+/* michaelhaupt.com: the Ledger look.
+ * This site is deliberately outside the network theme (no network.scss).
+ * Palette lives in quartz.config.yaml; the extras below have no Quartz token. */
+
+/* Libre Caslon (SIL Open Font Licence), self-hosted from Fontsource. No calls to Google. */
+@font-face {
+  font-family: 'Libre Caslon Display';
+  font-style: normal;
+  font-display: swap;
+  font-weight: 400;
+  src: url("/assets/fonts/libre-caslon-display-latin-ext-400-normal.woff2") format("woff2");
+  unicode-range: U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF;
+}
+@font-face {
+  font-family: 'Libre Caslon Display';
+  font-style: normal;
+  font-display: swap;
+  font-weight: 400;
+  src: url("/assets/fonts/libre-caslon-display-latin-400-normal.woff2") format("woff2");
+  unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;
+}
+@font-face {
+  font-family: 'Libre Caslon Text';
+  font-style: normal;
+  font-display: swap;
+  font-weight: 400;
+  src: url("/assets/fonts/libre-caslon-text-latin-ext-400-normal.woff2") format("woff2");
+  unicode-range: U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF;
+}
+@font-face {
+  font-family: 'Libre Caslon Text';
+  font-style: normal;
+  font-display: swap;
+  font-weight: 400;
+  src: url("/assets/fonts/libre-caslon-text-latin-400-normal.woff2") format("woff2");
+  unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;
+}
+@font-face {
+  font-family: 'Libre Caslon Text';
+  font-style: italic;
+  font-display: swap;
+  font-weight: 400;
+  src: url("/assets/fonts/libre-caslon-text-latin-ext-400-italic.woff2") format("woff2");
+  unicode-range: U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF;
+}
+@font-face {
+  font-family: 'Libre Caslon Text';
+  font-style: italic;
+  font-display: swap;
+  font-weight: 400;
+  src: url("/assets/fonts/libre-caslon-text-latin-400-italic.woff2") format("woff2");
+  unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;
+}
+@font-face {
+  font-family: 'Libre Caslon Text';
+  font-style: normal;
+  font-display: swap;
+  font-weight: 700;
+  src: url("/assets/fonts/libre-caslon-text-latin-ext-700-normal.woff2") format("woff2");
+  unicode-range: U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF;
+}
+@font-face {
+  font-family: 'Libre Caslon Text';
+  font-style: normal;
+  font-display: swap;
+  font-weight: 700;
+  src: url("/assets/fonts/libre-caslon-text-latin-700-normal.woff2") format("woff2");
+  unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;
+}
+
+/* IM Fell English SC (SIL Open Font Licence), self-hosted: */
+@font-face {
+  font-family: "IM Fell English SC";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/assets/fonts/im-fell-english-sc.woff2") format("woff2");
+}
+
+:root {
+  --gold: #a8823a;
+  --stamp-red: #a1281e;
+  --measure: 40rem;
+  --measure-wide: 54rem;
+}
+:root[saved-theme="dark"] {
+  --gold: #d2ae68;
+  --stamp-red: #e3826f;
+}
+
+/* ---- Page frame: one centred column, no sidebars ---- */
+.page[data-frame="full-width"] > #quartz-body .center.full-width {
+  max-width: var(--measure-wide);
+  min-width: 0;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+  box-sizing: border-box;
+}
+.page[data-frame="full-width"] > #quartz-body {
+  max-width: none;
+}
+.page-header header {
+  display: flex;
+  align-items: baseline;
+  gap: 1rem;
+  margin: 2rem 0 0;
+}
+.page-header header .masthead {
+  flex: 1;
+}
+.page > #quartz-body .center > hr {
+  display: none;
+}
+
+/* ---- Type ---- */
+body {
+  font-size: 18px;
+}
+h1, h2, h3, h4, .article-title {
+  font-weight: 400;
+  color: var(--dark);
+}
+article p, article li {
+  line-height: 1.65;
+}
+a, a.internal {
+  color: var(--secondary);
+  font-weight: 400;
+  background: none;
+  padding: 0;
+  border-bottom: 1px solid var(--gold);
+  text-decoration: none;
+}
+a:hover, a.internal:hover {
+  color: var(--tertiary);
+}
+.masthead a, .ledger .to a, a.mast-name {
+  border-bottom: none;
+}
+.masthead a.mast-name.internal {
+  color: var(--dark);
+}
+.masthead nav a.internal {
+  color: var(--gray);
+}
+.masthead nav a.internal.active, .masthead nav a.internal:hover {
+  color: var(--secondary);
+}
+.masthead nav a.internal.active {
+  border-bottom: 1px solid var(--gold);
+}
+.ledger .to a.internal {
+  color: var(--dark);
+}
+.ledger .to a.internal:hover {
+  color: var(--secondary);
+}
+
+/* Footer sits in the same column as the page */
+
+.site-foot {
+  max-width: calc(var(--measure-wide) - 3rem);
+  min-width: 0 !important;
+  width: 100%;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  opacity: 1;
+  padding: 0 1.5rem;
+  box-sizing: border-box;
+}
+body[data-slug^="letters/"]:not([data-slug="letters/index"]) footer.site-foot {
+  max-width: calc(var(--measure) - 2rem);
+}
+.page-header {
+  border: none;
+}
+
+/* ---- Home: the market sentence leads ---- */
+body[data-slug="index"] .article-title {
+  display: none;
+}
+body[data-slug="index"] article p:first-of-type {
+  font-family: var(--headerFont);
+  font-size: 2.4rem;
+  line-height: 1.2;
+  color: var(--dark);
+  margin: 3rem 0 0.6rem;
+  max-width: 48rem;
+}
+body[data-slug="index"] article p:nth-of-type(2) {
+  color: var(--gray);
+  margin-top: 0;
+}
+body[data-slug="index"] article p:nth-of-type(n + 3) {
+  max-width: 44rem;
+}
+
+/* ---- Letters ---- */
+body[data-slug^="letters/"]:not([data-slug="letters/index"]) {
+  & .article-title {
+    display: none;
+  }
+  & .page[data-frame="full-width"] > #quartz-body .center.full-width {
+    max-width: calc(var(--measure) + 3rem);
+  }
+}
+.callout[data-callout="signoff"] {
+  --color: var(--darkgray);
+  overflow: visible;
+  border: none;
+  background: none;
+  padding: 0;
+  margin: 1.6rem 0 0;
+  & .callout-icon, & .fold-callout-icon {
+    display: none;
+  }
+  & .callout-title {
+    padding: 0;
+    font-weight: 400;
+    color: var(--darkgray);
+  }
+  & .callout-title-inner,
+  & .callout-title-inner p {
+    font-weight: 400;
+  }
+  &::after {
+    content: "";
+    display: block;
+    width: 15rem;
+    height: 4.9rem;
+    margin: 0.3rem 0 0;
+    background: var(--dark);
+    -webkit-mask: url("/assets/signature.png") left center / contain no-repeat;
+    mask: url("/assets/signature.png") left center / contain no-repeat;
+  }
+}
+.callout[data-callout="ps"] {
+  --color: var(--dark);
+  border: none;
+  background: none;
+  padding: 0;
+  margin: 1rem 0 0;
+  & .callout-icon, & .fold-callout-icon {
+    display: none;
+  }
+  & .callout-title {
+    padding: 0;
+  }
+  & .callout-title-inner {
+    font-family: "IM Fell English SC", var(--headerFont);
+    letter-spacing: 0.05em;
+    font-weight: 400;
+    color: var(--dark);
+  }
+  & .callout-content {
+    padding: 0;
+  }
+  & .callout-content > p:first-child {
+    margin-top: 0.2rem;
+  }
+}
+.callout[data-callout="received"] {
+  --color: var(--dark);
+  border: none;
+  border-top: 1px solid var(--dark);
+  border-radius: 0;
+  background: none;
+  padding: 0.8rem 0 0;
+  margin: 2.4rem 0 0;
+  & .callout-icon, & .fold-callout-icon {
+    display: none;
+  }
+  & .callout-title {
+    padding: 0;
+  }
+  & .callout-title-inner {
+    font-family: "IM Fell English SC", var(--headerFont);
+    font-size: 1.25rem;
+    letter-spacing: 0.06em;
+    font-weight: 400;
+    color: var(--dark);
+  }
+  & .callout-content {
+    padding: 0;
+  }
+}
+.letter-actions {
+  display: flex;
+  gap: 1.4rem;
+  flex-wrap: wrap;
+  margin-top: 1.4rem;
+  font-size: 0.95rem;
+}
+
+/* ---- Small screens ---- */
+@media all and ($mobile) {
+  body {
+    font-size: 17px;
+  }
+  .page-header header {
+    margin-top: 1rem;
+    flex-wrap: wrap;
+  }
+  .masthead .mast-name {
+    font-size: 1.6rem;
+  }
+  body[data-slug="index"] article p:first-of-type {
+    font-size: 1.75rem;
+    margin-top: 1.6rem;
+  }
+}

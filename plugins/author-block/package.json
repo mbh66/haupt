@@ -1,0 +1,35 @@
+{
+  "name": "author-block",
+  "version": "0.1.0",
+  "description": "Author block (slim on letters), licence, AI use, copyright",
+  "type": "module",
+  "license": "MIT",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js"
+    },
+    "./components": {
+      "import": "./dist/components/index.js"
+    },
+    "./package.json": "./package.json"
+  },
+  "main": "./dist/index.js",
+  "quartz": {
+    "name": "author-block",
+    "displayName": "AuthorBlock",
+    "category": "component",
+    "version": "0.1.0",
+    "quartzVersion": ">=5.0.0",
+    "dependencies": [],
+    "defaultOrder": 50,
+    "defaultEnabled": true,
+    "defaultOptions": {},
+    "components": {
+      "AuthorBlock": {
+        "displayName": "AuthorBlock",
+        "defaultPosition": "footer",
+        "defaultPriority": 10
+      }
+    }
+  }
+}

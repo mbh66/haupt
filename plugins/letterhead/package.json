@@ -1,0 +1,35 @@
+{
+  "name": "letterhead",
+  "version": "0.1.0",
+  "description": "Letterhead, docket stamp, place and date on letter pages",
+  "type": "module",
+  "license": "MIT",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js"
+    },
+    "./components": {
+      "import": "./dist/components/index.js"
+    },
+    "./package.json": "./package.json"
+  },
+  "main": "./dist/index.js",
+  "quartz": {
+    "name": "letterhead",
+    "displayName": "Letterhead",
+    "category": "component",
+    "version": "0.1.0",
+    "quartzVersion": ">=5.0.0",
+    "dependencies": [],
+    "defaultOrder": 50,
+    "defaultEnabled": true,
+    "defaultOptions": {},
+    "components": {
+      "Letterhead": {
+        "displayName": "Letterhead",
+        "defaultPosition": "beforeBody",
+        "defaultPriority": 10
+      }
+    }
+  }
+}

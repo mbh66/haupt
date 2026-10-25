@@ -1,0 +1,35 @@
+{
+  "name": "ledger",
+  "version": "0.1.0",
+  "description": "The Letter Book ledger on the home page",
+  "type": "module",
+  "license": "MIT",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js"
+    },
+    "./components": {
+      "import": "./dist/components/index.js"
+    },
+    "./package.json": "./package.json"
+  },
+  "main": "./dist/index.js",
+  "quartz": {
+    "name": "ledger",
+    "displayName": "Ledger",
+    "category": "component",
+    "version": "0.1.0",
+    "quartzVersion": ">=5.0.0",
+    "dependencies": [],
+    "defaultOrder": 50,
+    "defaultEnabled": true,
+    "defaultOptions": {},
+    "components": {
+      "Ledger": {
+        "displayName": "Ledger",
+        "defaultPosition": "afterBody",
+        "defaultPriority": 10
+      }
+    }
+  }
+}

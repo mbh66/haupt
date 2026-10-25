@@ -1,0 +1,35 @@
+{
+  "name": "masthead",
+  "version": "0.1.0",
+  "description": "Masthead and site menu; the name drops away on letter pages",
+  "type": "module",
+  "license": "MIT",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js"
+    },
+    "./components": {
+      "import": "./dist/components/index.js"
+    },
+    "./package.json": "./package.json"
+  },
+  "main": "./dist/index.js",
+  "quartz": {
+    "name": "masthead",
+    "displayName": "Masthead",
+    "category": "component",
+    "version": "0.1.0",
+    "quartzVersion": ">=5.0.0",
+    "dependencies": [],
+    "defaultOrder": 50,
+    "defaultEnabled": true,
+    "defaultOptions": {},
+    "components": {
+      "Masthead": {
+        "displayName": "Masthead",
+        "defaultPosition": "header",
+        "defaultPriority": 10
+      }
+    }
+  }
+}
