@@ -7,7 +7,7 @@ updated: 2026-10-26
 
 The letters in the Letter Book are meant to be copied. In 1772 the Boston Committees of Correspondence wrote letters that were passed from town to town and rewritten for each new reader, until they had built a network nobody controlled. This page gives you what you need to do the same: a short template, an AI prompt, and the few rules that keep a letter worth reading.
 
-## Choose one person
+### Choose one person
 
 Write to one named person. The best recipient has a public profile or real leverage over a market, a convention or an institution, and already wants the outcome your letter serves. Your letter offers them a route to it, so there is no case to argue.
 
@@ -19,7 +19,7 @@ Ask yourself which part of the problem they can move:
 
 Mix famous names with people likely to answer. A Letter Book full of silence teaches nobody anything.
 
-## The rules
+### The rules
 
 1. Send it privately first. Publish nothing until they have had it, and replied or had time to.
 2. Ask for one small, specific thing.
@@ -28,7 +28,7 @@ Mix famous names with people likely to answer. A Letter Book full of silence tea
 5. Never write words for them to sign. If they reply, quote them as written and only with their permission.
 6. Nothing that would help greenwashing, an offset sale or growth that ignores its limits.
 
-## The template
+### The template
 
 ```
 [Your place], [date]
@@ -47,7 +47,7 @@ Yours sincerely,
 P.S. [Optional: the lighter line, with a link to the method or page that backs it up.]
 ```
 
-## The prompt
+### The prompt
 
 Paste this into the AI you already use, with the person's name and what you know of their work.
 
@@ -70,13 +70,13 @@ before I send it.
 
 Read what comes back as a first draft. Rewrite it until you would sign it, because you will.
 
-## Forward or write
+### Forward or write
 
 If a letter in the Letter Book already says what you would say, forward it to someone like its recipient. The forward link sits under every letter. If it does not, write your own.
 
 %% Open: whether readers can send their letters to be listed alongside the Letter Book, and how. %%
 
-## Related
+### Related
 
 - [[letters/index|The Letter Book]]
 - [[method|The Method]]

@@ -126,12 +126,14 @@ h1.article-title {
   font-size: 2.3rem;
   margin: 2.4rem 0 1rem;
 }
-article h2 {
+/* Section headings: ### for sections, #### below them (# and ## are the headline pair) */
+article h3 {
   font-size: 1.55rem;
   margin: 2.4rem 0 0.6rem;
 }
-article h3 {
-  font-size: 1.2rem;
+article h4 {
+  font-size: 1.35rem;
+  margin: 1.6rem 0 0.4rem;
 }
 article p, article li {
   line-height: 1.65;
@@ -192,19 +194,25 @@ body[data-slug^="letters/"]:not([data-slug="letters/index"]) footer.site-foot {
 body[data-slug="index"] .article-title {
   display: none;
 }
-body[data-slug="index"] article p:first-of-type {
+/* Page headings, every page: # is the large headline, ## the quiet grey line beneath it */
+article h1 {
   font-family: var(--headerFont);
+  font-weight: 400;
   font-size: 2.4rem;
   line-height: 1.2;
   color: var(--dark);
   margin: 3rem 0 0.6rem;
   max-width: 48rem;
 }
-body[data-slug="index"] article p:nth-of-type(2) {
+article h2 {
+  font-family: var(--bodyFont);
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.65;
   color: var(--gray);
-  margin-top: 0;
+  margin: 0 0 1rem;
 }
-body[data-slug="index"] article p:nth-of-type(n + 3) {
+body[data-slug="index"] article p {
   max-width: 44rem;
 }
 
@@ -317,7 +325,7 @@ body[data-slug^="letters/"]:not([data-slug="letters/index"]) {
   .masthead .mast-name {
     font-size: 1.6rem;
   }
-  body[data-slug="index"] article p:first-of-type {
+  article h1 {
     font-size: 1.75rem;
     margin-top: 1.6rem;
   }
