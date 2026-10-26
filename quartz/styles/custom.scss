@@ -122,6 +122,17 @@ h1, h2, h3, h4, .article-title {
   font-weight: 400;
   color: var(--dark);
 }
+h1.article-title {
+  font-size: 2.3rem;
+  margin: 2.4rem 0 1rem;
+}
+article h2 {
+  font-size: 1.55rem;
+  margin: 2.4rem 0 0.6rem;
+}
+article h3 {
+  font-size: 1.2rem;
+}
 article p, article li {
   line-height: 1.65;
 }
@@ -161,7 +172,7 @@ a:hover, a.internal:hover {
 /* Footer sits in the same column as the page */
 
 .site-foot {
-  max-width: calc(var(--measure-wide) - 3rem);
+  max-width: var(--measure-wide);
   min-width: 0 !important;
   width: 100%;
   margin-left: auto !important;
@@ -171,7 +182,7 @@ a:hover, a.internal:hover {
   box-sizing: border-box;
 }
 body[data-slug^="letters/"]:not([data-slug="letters/index"]) footer.site-foot {
-  max-width: calc(var(--measure) - 2rem);
+  max-width: calc(var(--measure) + 3rem);
 }
 .page-header {
   border: none;
@@ -310,4 +321,14 @@ body[data-slug^="letters/"]:not([data-slug="letters/index"]) {
     font-size: 1.75rem;
     margin-top: 1.6rem;
   }
+}
+
+/* Social icons in the author block. Plugin CSS sits in a cascade layer, so the
+ * site-wide link rule above wins over it; these overrides must live here. */
+.author-block .a-social a.social {
+  border-bottom: none;
+  color: var(--secondary);
+}
+.author-block .a-social a.social:hover {
+  color: var(--tertiary);
 }

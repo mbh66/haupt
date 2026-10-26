@@ -312,8 +312,11 @@ plugins:
       links:
         The Letter Book: /
         The wikis: wikis
-        The Substack: https://bioconomy.substack.com
         About: about
+      social:
+        LinkedIn: https://www.linkedin.com/in/michaelhaupt/
+        Substack: https://bioconomy.substack.com
+        YouTube: https://www.youtube.com/@MichaelHaupt2035
     layout:
       position: footer
       priority: 10

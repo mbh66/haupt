@@ -7,4 +7,4 @@ portrait: assets/portrait.png
 unlisted: true
 ---
 
-Placeholder biography: forty years in telecoms, systems integration and change, treated as an apprenticeship. This paragraph is the single source for the author block at the foot of every page. Edit it here and the whole site follows.
+Michael Haupt spent forty years in telecoms, systems integration and change, from the launch of Iridium's gateways to running Striata UK. He now works on making the water held in living land worth paying for, from Greyton in the Valley of Grace, and publishes the playbook as he goes.

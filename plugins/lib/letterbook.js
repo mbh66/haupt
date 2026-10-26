@@ -268,6 +268,35 @@ function inline(text, slug) {
   return out
 }
 
+
+// Single-colour brand marks (24x24), from Simple Icons (CC0). Drawn inline so no
+// request goes to the networks. Add a network: one entry here, one line in the config.
+const SOCIAL_ICONS = {
+  LinkedIn: "M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z",
+  Substack: "M22.539 8.242H1.46V5.406h21.08v2.836zM1.46 10.812V24L12 18.11 22.54 24V10.812H1.46zM22.54 0H1.46v2.836h21.08V0z",
+  YouTube: "M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z",
+}
+
+function socialRow(social, name) {
+  const entries = Object.entries(social || {}).filter(([k]) => SOCIAL_ICONS[k])
+  if (!entries.length) return null
+  return h(
+    "ul",
+    { class: "a-social" },
+    entries.map(([network, url]) =>
+      h(
+        "li",
+        null,
+        h(
+          "a",
+          { href: url, class: "external social", target: "_blank", rel: "me noopener", "aria-label": `${name} on ${network}`, title: network },
+          h("svg", { viewBox: "0 0 24 24", width: "20", height: "20", "aria-hidden": "true", focusable: "false" }, h("path", { d: SOCIAL_ICONS[network] })),
+        ),
+      ),
+    ),
+  )
+}
+
 const authorCss = `
 .author-block { border-top:1px solid var(--gold); margin-top:3rem; padding-top:1.4rem; display:grid;
   grid-template-columns:9rem minmax(0,1fr); gap:2rem; align-items:center; }
@@ -280,6 +309,12 @@ const authorCss = `
 .author-block .a-title { font-style:italic; color:var(--gray); margin:.1rem 0 .6rem; }
 .author-block p { margin:0 0 .6rem; }
 .author-block .a-links { display:flex; gap:1.3rem; flex-wrap:wrap; font-size:.95rem; }
+.author-block .a-social { list-style:none; display:flex; gap:1rem; margin:.9rem 0 0; padding:0; }
+.author-block .a-social li { margin:0; }
+.author-block .a-social a.social { display:inline-flex; color:var(--secondary); border-bottom:none; padding:0; background:none; }
+.author-block .a-social a.social:hover { color:var(--tertiary); }
+.author-block .a-social svg { fill:currentColor; display:block; }
+.author-block .a-social a.external::after, .author-block .a-social .external-icon { display:none; }
 .author-slim { border-top:1px solid var(--gold); margin-top:3rem; padding-top:.9rem; display:flex; justify-content:space-between; gap:1rem; flex-wrap:wrap; color:var(--gray); }
 .base-line { display:flex; justify-content:space-between; gap:1rem; flex-wrap:wrap; border-top:1px solid var(--lightgray);
   margin:1.4rem 0 3rem; padding-top:.6rem; font-size:.82rem; color:var(--gray); }
@@ -334,6 +369,7 @@ export const AuthorBlock = (rawOpts) => {
           Object.keys(opts.links).length
             ? h("div", { class: "a-links" }, Object.entries(opts.links).map(([label, t]) => h("a", { href: href(slug, t), class: /^https?:/.test(t) ? "external" : "internal" }, label)))
             : null,
+          socialRow(opts.social, fm.name || opts.siteName),
         ),
       ),
       base,

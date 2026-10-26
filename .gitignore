@@ -12,3 +12,6 @@ replit.nix
 .quartz/
 quartz/cli/tui/dist/
 .turbo/
+
+# Network convention: no plugin lock file (local plugins only)
+quartz.lock.json
