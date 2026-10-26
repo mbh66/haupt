@@ -332,3 +332,8 @@ body[data-slug^="letters/"]:not([data-slug="letters/index"]) {
 .author-block .a-social a.social:hover {
   color: var(--tertiary);
 }
+
+/* The Letter Book page (letters/index): the ledger replaces Quartz's folder listing. */
+body[data-slug="letters/index"] .page-listing {
+  display: none;
+}

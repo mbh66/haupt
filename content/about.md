@@ -1,7 +1,7 @@
 ---
 title: About
 description: "Michael Haupt: forty years in telecoms, systems integration and change, from Iridium's gateways to Striata UK, now spent making the water held in living land worth paying for, from Greyton in the Valley of Grace."
-draft: true
+draft: false
 updated: 2026-10-25
 ---
 

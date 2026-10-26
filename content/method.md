@@ -1,7 +1,7 @@
 ---
 title: The Method
 description: "How Michael Haupt prepares a catchment, its landowners and its forum to be paid for the water the land holds: three moves borrowed from the diamond trade, made in the open, and the Catchment Chronicle that records them."
-draft: true
+draft: false
 updated: 2026-10-25
 ---
 

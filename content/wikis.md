@@ -1,7 +1,7 @@
 ---
 title: The Wikis
 description: "The open repositories behind the Letter Book: the BioConomy wiki, the BioHubs directory, the Ward 2 Development Forum register and the High School Decision Tool, all free to read, reuse and question with your own AI."
-draft: true
+draft: false
 updated: 2026-10-25
 ---
 

@@ -1,6 +1,6 @@
 ---
-title: Letters
-description: "Every letter in the Letter Book, in the order sent."
+title: The Letter Book
+description: "Every letter Michael Haupt has published, in the order sent, with the status of each and any reply received."
 ---
 
-Every letter in the Letter Book, in the order sent. The [[index|Letter Book]] shows each one with its status.
+Every letter, in the order sent, with what came back. Each went privately to its recipient first.

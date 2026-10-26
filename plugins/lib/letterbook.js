@@ -15,6 +15,8 @@ const DEFAULTS = {
   nav: { "Letter Book": "/", About: "about" },
   place: "Greyton, Valley of Grace",
   ledgerFoot: "Results vary with rainfall.",
+  ledgerPage: "letters/index",
+  ledgerHeading: null,
   lettersFolder: "letters",
   authorPage: "about-the-author",
   copyrightHolder: "Michael Haupt",
@@ -76,8 +78,9 @@ export const Masthead = (rawOpts) => {
     const letter = isLetter(slug, opts.lettersFolder)
     const items = Object.entries(opts.nav).map(([label, target]) => {
       const t = target.replace(/^\//, "")
+      const base = t.replace(/\/index$/, "").replace(/\/$/, "")
       const active =
-        (t === "" && (slug === "index" || letter)) || (t !== "" && (slug === t || slug.startsWith(t + "/")))
+        t === "" ? slug === "index" : slug === base || slug.startsWith(base + "/")
       return h("a", { href: href(slug, target), class: active ? "active internal" : "internal" }, label)
     })
     return h(
@@ -148,7 +151,7 @@ export const Letterhead = (rawOpts) => {
 
 const ledgerCss = `
 .letter-actions { display:flex; gap:1.4rem; flex-wrap:wrap; margin-top:1.6rem; font-size:.95rem; }
-.ledger { margin-top:3rem; }
+.ledger { margin-top:1.5rem; }
 .ledger-head { display:flex; justify-content:space-between; align-items:baseline; border-bottom:1px solid var(--gold); padding-bottom:.4rem; }
 .ledger-head h2 { font-family:"IM Fell English SC", var(--headerFont); font-weight:400; font-size:1.7rem; letter-spacing:.06em; margin:0; color:var(--dark); }
 .ledger-head .tally { color:var(--gray); font-size:.9rem; }
@@ -189,7 +192,7 @@ export const Ledger = (rawOpts) => {
         h("a", { class: "internal", href: href(fileData.slug, fm.template || "write-your-own") }, "Write your own"),
       )
     }
-    if (fileData.slug !== "index") return null
+    if (fileData.slug !== opts.ledgerPage) return null
     const letters = (allFiles || [])
       .filter((f) => isLetter(f.slug, opts.lettersFolder))
       .filter((f) => (f.frontmatter?.status || "") !== "sent")
@@ -205,17 +208,17 @@ export const Ledger = (rawOpts) => {
         null,
         h("span", { class: "no" }, fm.number ? `No. ${fm.number}` : ""),
         h("span", { class: "sent" }, sent ? fmtShort(sent) : ""),
-        h("span", { class: "to" }, h("a", { class: "internal", href: href("index", f.slug) }, fm.title || f.slug), sub ? h("small", null, sub) : null),
+        h("span", { class: "to" }, h("a", { class: "internal", href: href(fileData.slug, f.slug) }, fm.title || f.slug), sub ? h("small", null, sub) : null),
         h("span", { class: "stamp" }, h("span", { class: `docket tone-${st.tone}` }, st.label)),
       )
     })
     return h(
       "section",
-      { class: "ledger", "aria-labelledby": "letter-book-heading" },
+      { class: "ledger", "aria-label": "Letters and their status" },
       h(
         "div",
         { class: "ledger-head" },
-        h("h2", { id: "letter-book-heading" }, "The Letter Book"),
+        opts.ledgerHeading ? h("h2", { id: "letter-book-heading" }, opts.ledgerHeading) : h("span"),
         h("span", { class: "tally" }, `${letters.length} published · ${replied} replied`),
       ),
       letters.length ? h("ol", null, rows) : h("p", { class: "empty" }, "The first letters are in the post."),

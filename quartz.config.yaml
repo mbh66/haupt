@@ -277,7 +277,7 @@ plugins:
     options:
       siteName: Michael Haupt
       nav:
-        Letter Book: /
+        Letter Book: letters/
         Method: method
         Wikis: wikis
         About: about
@@ -310,7 +310,7 @@ plugins:
         name: CC BY-SA 4.0
         url: https://creativecommons.org/licenses/by-sa/4.0/
       links:
-        The Letter Book: /
+        The Letter Book: letters/
         The wikis: wikis
         About: about
       social:
