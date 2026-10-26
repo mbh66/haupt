@@ -1,16 +1,16 @@
 ---
-title: "To a specimen recipient"
+title: To a specimen recipient
 description: "Specimen letter for checking the layout. Delete or set draft: true before the site goes live."
 number: 1
-recipient: "Specimen Recipient"
-recipient_role: "Placeholder used to check the letter layout"
+recipient: Specimen Recipient
+recipient_role: Placeholder used to check the letter layout
 layer: supply
-audience: "catchment partnerships"
+audience: catchment partnerships
 spelling: en-GB
 sent: 2026-11-15
 status: replied
 status_date: 2026-12-03
-reply_published: true
+reply_published: false
 substack_essay: ""
 template: ""
 ---
