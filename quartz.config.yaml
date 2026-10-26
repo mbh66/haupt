@@ -303,7 +303,7 @@ plugins:
     enabled: true
     options:
       siteName: Michael Haupt
-      place: Greyton, Valley of Grace
+      place: Valley of Grace, WC, South Africa
       authorPage: about-the-author
       copyrightHolder: Michael Haupt
       licence:
@@ -315,7 +315,7 @@ plugins:
         About: about
       social:
         LinkedIn: https://www.linkedin.com/in/michaelhaupt/
-        Substack: https://bioconomy.substack.com
+        Substack: https://bio.substack.com
         YouTube: https://www.youtube.com/@MichaelHaupt2035
     layout:
       position: footer
