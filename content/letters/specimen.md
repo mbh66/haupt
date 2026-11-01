@@ -1,7 +1,7 @@
 ---
 title: To a specimen recipient
 description: "Specimen letter for checking the layout. Delete or set draft: true before the site goes live."
-number: 1
+number: 0.1
 recipient: Specimen Recipient
 recipient_role: Placeholder used to check the letter layout
 layer: supply
@@ -13,6 +13,7 @@ status_date: 2026-12-03
 reply_published: false
 substack_essay: ""
 template: ""
+draft: true
 ---
 
 Dear Specimen,

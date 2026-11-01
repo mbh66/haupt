@@ -55,6 +55,7 @@ const STATUS = {
   declined: { label: "Declined", tone: "grey" },
   "no-reply": { label: "No reply yet", tone: "dashed" },
   sent: { label: "Sent", tone: "red" },
+  "on-file": { label: "On file", tone: "grey" },
 }
 
 // ---------- Masthead ----------
