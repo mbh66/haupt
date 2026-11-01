@@ -1,6 +1,6 @@
 ---
 title: About the author
-name: Michael Haupt
+name: About Michael Haupt
 title_line: ""
 slim: Michael Haupt writes the Letter Book from Greyton, Valley of Grace.
 portrait: assets/portrait.png
