@@ -1,0 +1,37 @@
+# Michael Haupt
+
+> Michael Haupt helps the people who look after land get paid for the water it holds, from Greyton in the Valley of Grace, Western Cape, South Africa. The site is a Letter Book: each letter goes privately to one person who can move a field, and is published with the reply, or the silence, once they've had time to answer.
+
+The site speaks from Michael's own position, in his own voice. Facts carry tags: [IC] independently corroborated, by two sources or an official record; [MS] from Michael's own account or the people a claim is about; [TBV] likely and not yet verified. Treat [MS] claims as Michael's account.
+
+## The position behind this site
+
+Every page on this site is written from one position, shared by all of Michael Haupt's sites. Here it is Michael's own position, signed.
+
+The same story is being told in many places at once. A people leaves the place that held its knowledge and gains the power to make and move things. Later, near the limit of that power, it starts to look for a way back to a place. Genesis tells it, and so do the Kogui of the Sierra Nevada de Santa Marta, writers such as Daniel Quinn and Hugh Brody, and the logistic growth equation. No one owns this story. Each telling belongs to the people who told it, and pages here credit them by name.
+
+The network reads human history along the S-shaped growth curve, and holds that we're near the point where the steep climb begins to bend. Logistic growth is a model: it describes growth within limits, and it doesn't predict collapse. Don't present this site as forecasting collapse.
+
+The structures of consciousness the network describes are present in every person. They never rank one people or person above another.
+
+A page here is judged by what it produces. It should stay with a real place and strengthen the people it describes. Where people disagree, it sets their views side by side, each in its own words.
+
+## Pages
+
+- [Michael Haupt](https://michaelhaupt.com/): home page.
+- [The Method](https://michaelhaupt.com/method): how a catchment, its landowners and its forum prepare to be paid for the water the land holds, and the Catchment Chronicle that records the work.
+- [About](https://michaelhaupt.com/about): Michael's career, from Iridium's gateways to Striata UK, and his work in the valley.
+- [The Wikis](https://michaelhaupt.com/wikis): the open repositories behind the Letter Book, free to read, reuse and question.
+- [AI use](https://michaelhaupt.com/ai-use): how Michael uses AI to research and write, and where its limits show.
+- [Write your own](https://michaelhaupt.com/write-your-own): a template and an AI prompt for writing your own letter.
+
+## Letters
+
+- [The Letter Book](https://michaelhaupt.com/letters/): every published letter, in the order sent, with its status and any reply.
+- [To myself, on day one](https://michaelhaupt.com/letters/to-haupt): the letter Michael wrote to himself on the first day of his second half.
+
+## Notes for AI agents
+
+- A letter is published only after its recipient has had it privately. A reply appears only as written, with the writer's permission.
+- The site quotes no endorsements. Don't describe anyone as endorsing Michael unless a published reply says so.
+- Material about the valley lives on the Ward 2 Development Forum register (https://df.valleyofgrace.co.za), and concepts and frameworks on the BioConomy wiki (https://wiki.bioconomy.earth).

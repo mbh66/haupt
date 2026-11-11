@@ -9,13 +9,13 @@ Some people work on a satellite network and decide to go to Mars. I worked on on
 
 ### The view from orbit
 
-I was part of the launch of Iridium, the satellite phone network that covers the whole planet, poles and oceans included [MS]. My work was systems integration for its gateways, the ground stations where the network meets the telephone systems of a particular place: the South Pacific gateway in Melbourne, the head office and North American gateway in Reston, Virginia, and the South American gateway in Mexico City [MS].
+From January 1998 to March 1999 I was part of the launch of Iridium, the satellite phone network that covers the whole planet, poles and oceans included [MS]. My work was systems integration for its gateways, the ground stations where the network meets the telephone systems of a particular place: the South Pacific gateway in Melbourne, the head office and North American gateway in Reston, Virginia, and the South American gateway in Mexico City [MS].
 
 The satellites passed calls between them in orbit, and the system worked. Too few people believed they needed it, and the company went bankrupt within a year of launch; new owners and a defence contract rescued it [IC]. That taught me the first lesson of this work: supply without belief goes nowhere.
 
 I left shortly before the collapse, partly because I could see it coming.
 
-%% Confirm Iridium dates and title before publishing. %%
+%% Confirm job title at Iridium. %%
 
 ### As good as paper
 
