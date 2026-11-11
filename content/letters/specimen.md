@@ -25,7 +25,7 @@ May I send you the two-page version?
 > [!signoff] Yours sincerely,
 
 > [!ps] P.S.
-> The De Beers wink lives here, with the [[method|playbook]] one click away.
+> The postscript lives here, with the [[method|method]] one click away.
 
 > [!received] Received
 > The reply appears here as written, with permission. [MS]

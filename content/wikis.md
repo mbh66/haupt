@@ -37,10 +37,8 @@ The answer will be yours, worked out in your own session. Nothing you ask comes 
 
 The text is licensed CC BY-SA 4.0: copy it, adapt it and build on it, with credit, and share what you make on the same terms. The playbook is only worth publishing if other people run it.
 
-%% Possible closing line, held until the decision on naming Rhodes: "Rhodes built a cartel. Membership of this one is free." %%
-
 ### Related
 
 - [[method|The Method]]
-- [[index|The Letter Book]]
+- [[letters/index|The Letter Book]]
 - [The BioConomy Substack](https://bioconomy.substack.com), where each published letter gets an explainer essay
